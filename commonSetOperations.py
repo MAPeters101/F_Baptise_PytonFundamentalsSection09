@@ -71,8 +71,24 @@ non_returned = sold - returned
 print(non_returned)
 print('+'*20)
 
+
 alphabet = set('abcdefghijklmnopqrstuvwxyz')
 import string
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.ascii_letters)
+#print(?string)
+print(help(string))
+alphabet = set(string.ascii_letters)
+print(alphabet)
+
+text = 'The quick brown fox jumps over the lazy dog'
+print(set(string.ascii_letters) - set(text))
+print(set(string.ascii_letters.casefold()) - set(text.casefold()))
+
+text = 'aBcDeFgHiJkKlLmMnNoOPqQrRsStTuUvVwW'
+print(set(string.ascii_letters.casefold()) - set(text.casefold()))
+print(set(string.ascii_letters) - set(text))
 
 
 
